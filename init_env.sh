@@ -59,3 +59,6 @@ sudo add-apt-repository \
    stable"
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+
+echo "$line::Installing Rust::$line"
+curl -sSf https://static.rust-lang.org/rustup.sh | sh
