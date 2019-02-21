@@ -8,3 +8,5 @@ initializer script to customize the OS and apps to my liking
 4. PyEnv
 5. fzf
 6. vim and my configuration/plugins
+7. zsh
+8. Rust-lang

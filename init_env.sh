@@ -9,7 +9,8 @@ sudo apt install \
     ca-certificates \
     curl \
     gnupg-agent \
-    software-properties-common
+    software-properties-common \
+    zsh
 
 
 echo "$line::Version Managers::$line"
@@ -34,7 +35,7 @@ sudo apt install vim
 
 echo 'Installing personal vim files/scripts'
 git clone  --depth 1 git@github.com:si-mikey/vim.git ~/.vim
-cp ~/.vim/.vimrc
+cp ~/.vim/.vimrc ~
 
 echo 'Install vundle for installing plugins in .vimrc'
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -45,7 +46,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 echo 'Installing fzf and fzf.vim'
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+source ~/.fzf/install
 
 echo 'Installing powerline fonts'
 sudo apt install font-powerline
@@ -58,7 +59,6 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-
 
 echo "$line::Installing Rust::$line"
 curl -sSf https://static.rust-lang.org/rustup.sh | sh
