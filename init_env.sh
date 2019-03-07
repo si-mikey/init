@@ -12,6 +12,10 @@ sudo apt install \
     software-properties-common \
     zsh
 
+echo "$line::Installing Bat - cat alternative::$line"
+cd ~/code/rust/
+wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
+sudo dpkg -i bat_0.10.0_amd64.deb
 
 echo "$line::Version Managers::$line"
 echo 'Installing nvm'
