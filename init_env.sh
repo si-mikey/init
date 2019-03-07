@@ -17,6 +17,10 @@ cd ~/code/rust/
 wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
 sudo dpkg -i bat_0.10.0_amd64.deb
 
+
+echo "$line::Installing nnn - cool terminal file mananger::$line"
+sudo apt install nnn
+
 echo "$line::Version Managers::$line"
 echo 'Installing nvm'
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
