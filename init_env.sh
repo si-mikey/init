@@ -17,7 +17,6 @@ cd ~/code/rust/
 wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
 sudo dpkg -i bat_0.10.0_amd64.deb
 
-
 echo "$line::Installing nnn - cool terminal file mananger::$line"
 sudo apt install nnn
 
@@ -70,3 +69,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 echo "$line::Installing Rust::$line"
 curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
+echo "$line::Installing tldr::$line"
+npm install -g tldr
+
+
